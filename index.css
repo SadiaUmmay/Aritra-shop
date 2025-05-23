@@ -1,0 +1,184 @@
+.nav-height {
+    height: 80px;
+    
+}
+nav ul li a:hover{
+    color: red;
+}
+.nav-ul {
+    float: right;
+    margin-right: 80px;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 35px;
+}
+nav ul li a {
+    position: relative;
+    color:black;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+nav ul li a:hover:before {
+    /* transform: scaleX(1); */
+    /* transform-origin: left; */
+}
+label #open,
+label #close {
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+.nav_area{
+    position: relative;
+}
+.nav_link{
+    cursor: pointer;
+}
+.nav_link::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color:red;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    left: 0;
+    bottom: -0.1px;
+    z-index: 1;
+    transition: width 0.5s;
+}
+.nav_link:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+/* drop down css here */
+ul li> .dropdown{
+    display: none;
+    position: absolute;
+    /* margin-left: 30%; */
+}
+ul li:hover > .dropdown{
+    display: block;
+    background-color: white;
+    width: 200px;
+    border-radius: 5px;
+}
+ul li:hover> .dropdown li{
+    padding: 5px;
+}
+.icon-1{
+display: none;
+}
+.heart{
+    opacity: 0;
+}
+.product_cart:hover .heart{
+    opacity: 1;
+}
+.product_cart .shop_now_btn , .circle , .heart , .shoes_size{
+    opacity: 0;
+}
+.product_cart:hover .shop_now_btn , .product_cart:hover .circle , .product_cart:hover .heart , .product_cart:hover .shoes_size{
+    opacity: 1;
+}
+.zoomImg:hover{
+transform: scale(1.1);
+
+}
+.animate-scale img{
+    transition: transform 0.8s ease,
+    filter 0.8s ease;
+}
+.animate-scale img:hover{
+    transform: scale(1.1);
+    filter:brightness(0.7)
+}
+/* review css start */
+.carousel-inner{
+    transition: transform 0.5s ease-in-out;
+}
+.review-carousel{
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.review-btn{
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+.prevSlide{
+    left: 10px;
+}
+.nextSlide{
+    right: 10px;
+}
+@media screen and (max-width:576px) {
+    label #open {
+        display: block;
+        cursor: pointer;
+    }
+
+    ul {
+        position: fixed;
+        width: 70%;
+        height: 100vh;
+        background:white;
+        top: 0px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 1;
+    }
+    .nav-img {
+        display: none;
+    }
+    .nav-height {
+        margin-top: 0px;
+        position: fixed;
+        width: 100%;
+        z-index:1;
+    }
+    .nav-ul{
+        margin-top: 0px;
+    }
+    nav ul li {
+        display: block;
+        margin: 0px 0;
+        line-height: 60px;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    #check:checked~label #open {
+        display: none;
+    }
+
+    #check:checked~label #close {
+        display: block;
+        cursor: pointer;
+    }}
