@@ -79,7 +79,6 @@ label #close {
 ul li> .dropdown{
     display: none;
     position: absolute;
-    /* margin-left: 30%; */
 }
 ul li:hover > .dropdown{
     display: block;
@@ -131,6 +130,7 @@ transform: scale(1.1);
     border: 2px solid rgb(164, 164, 164);
    
 }
+
 /* review css start */
 .carousel-inner{
     transition: transform 0.5s ease-in-out;
