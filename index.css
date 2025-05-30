@@ -98,15 +98,11 @@ display: none;
 .product_cart:hover .heart{
     opacity: 1;
 }
-.product_cart .shop_now_btn , .circle , .heart , .shoes_size{
+.product_cart  .circle , .heart{
     opacity: 0;
 }
-.product_cart:hover .shop_now_btn , .product_cart:hover .circle , .product_cart:hover .heart , .product_cart:hover .shoes_size{
+.product_cart:hover .shop_now_btn , .product_cart:hover .circle , .product_cart:hover .heart , .product_cart:hover{
     opacity: 1;
-}
-.zoomImg:hover{
-transform: scale(1.1);
-
 }
 .animate-scale img{
     transition: transform 0.8s ease,
