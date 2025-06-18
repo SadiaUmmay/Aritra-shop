@@ -35,10 +35,7 @@ nav ul li a {
 
 }
 
-nav ul li a:hover:before {
-    /* transform: scaleX(1); */
-    /* transform-origin: left; */
-}
+
 label #open,
 label #close {
     color: white;
@@ -127,7 +124,7 @@ display: none;
    
 }
 
-/* review css start */
+/* review css start
 .carousel-inner{
     transition: transform 0.5s ease-in-out;
 }
@@ -147,7 +144,7 @@ display: none;
 }
 .nextSlide{
     right: 10px;
-}
+} */
 @media screen and (max-width:576px) {
     label #open {
         display: block;
